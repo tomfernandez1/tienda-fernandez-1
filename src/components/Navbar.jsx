@@ -1,4 +1,4 @@
-
+import CartWidget from "./CartWidget.jsx"
 function Navbar() {
     return (
         <div id="" className="">
@@ -24,7 +24,8 @@ function Navbar() {
               <li class="nav-item">
                 <a class="nav-link" href="#">Sobre Nosotros</a>
               </li>
-            </ul>
+              <CartWidget/>  
+      </ul>
           </div>
         </div>
       </nav>
