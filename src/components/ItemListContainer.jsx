@@ -1,7 +1,13 @@
 
-function ItemListContainer () {
+function Saludo (props) {
     return ( 
-        <h4>Acá va a estar el catálogo</h4>
+        <h1>{props.mensaje}</h1>
+    )
+}
+
+function ItemListContainer (){
+    return (
+        <Saludo mensaje="HOLA!"/>
     )
 }
 
