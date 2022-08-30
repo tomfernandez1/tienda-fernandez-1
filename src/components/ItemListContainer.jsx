@@ -1,3 +1,4 @@
+import ItemCount from "./ItemCount";
 
 function Saludo (props) {
     return ( 
@@ -7,7 +8,10 @@ function Saludo (props) {
 
 function ItemListContainer (){
     return (
-        <Saludo mensaje="HOLA!"/>
+        <>
+            <Saludo mensaje="HOLA!" />
+            <ItemCount stock="5" initial="1" />
+        </>
     )
 }
 
