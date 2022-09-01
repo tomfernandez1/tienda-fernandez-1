@@ -1,17 +1,9 @@
-import ItemCount from "./ItemCount";
+import React from "react";
+import ItemList from "./ItemList";
 
-function Saludo (props) {
-    return ( 
-        <h1>{props.mensaje}</h1>
-    )
-}
-
-function ItemListContainer (){
+export const ItemListContainer = ({greeting}) => {
     return (
-        <>
-            <Saludo mensaje="HOLA!" />
-            <ItemCount stock="5" initial="1" />
-        </>
+        <><ItemList /></>
     )
 }
 
