@@ -1,10 +1,11 @@
 import React from 'react'
 
-function Item ({nombre, id, precio, imagen})  {
+export const Item = ({nombre, id, precio, imagen}) =>  {
     
   return (
+    
     <div className="card" style={{width: '18rem', margin:"2vw", alignItems:"center"}}>
-  <img src={imagen} className="card-img-top" alt="..." style={{width: "250px"}} />
+  <img src={imagen} className="card-img-top" alt="..." style={{width: "150px"}} />
   <div className="card-body">
     <p className="card-text">Id: {id}</p>
     <p className="card-text">Nombre: {nombre}</p>
@@ -13,7 +14,6 @@ function Item ({nombre, id, precio, imagen})  {
   </div>
 </div>
 
- 
   )
 }
 
