@@ -22,7 +22,7 @@ export const ItemListContainer = ({greeting}) => {
         <div id="item-list-container">
             {
                 loading?
-                    <div>Cargando..</div>
+                    <div>Cargando...</div>
                 :
                     <ItemList items={products}/>
             }
