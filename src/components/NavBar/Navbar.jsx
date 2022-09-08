@@ -1,4 +1,7 @@
-import CartWidget from "./CartWidget.jsx"
+import React from "react";
+import CartWidget from "./CartWidget.jsx";
+import { Link } from "react-router-dom";
+
 function Navbar() {
     return (
         <div id="" className="">
@@ -11,18 +14,16 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarColor03">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <a className="nav-link active" href="#">Productos
-                  <span className="visually-hidden">(current)</span>
-                </a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Cómo Comprar</a>
+                <Link className="nav-link" to="/comocomprar">¿Cómo Comprar?</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Ventas por Mayor</a>
+                <Link className="nav-link" to="/pormayor">Ventas Por Mayor</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Sobre Nosotros</a>
+                <Link className="nav-link" to="/nosotros">Sobre Nosotros</Link>
               </li>
               <CartWidget/>  
       </ul>
